@@ -14,10 +14,10 @@ namespace TEXT_RPG
         public string Description { get; }
         public Action<Player, Enemy> Execute { get; }
 
-        public Skill(string name, int mPCost, int damage, string description, Action<Player, Enemy> execute)
+        public Skill(string name, int mpCost, int damage, string description, Action<Player, Enemy> execute)
         {
             Name = name;
-            MPCost = mPCost;
+            MPCost = mpCost;
             Damage = damage;
             Description = description;
             Execute = execute;
