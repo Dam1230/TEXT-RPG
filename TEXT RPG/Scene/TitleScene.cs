@@ -8,7 +8,6 @@ namespace TEXT_RPG
 {
     public class TitleScene : BaseScene
     {
-        //⌝⌜⌟⌞◜◝◝◜◞◟‾_–‾—=–−-
         public override void Render()
         {
             Console.WriteLine("--------------------");
@@ -19,7 +18,7 @@ namespace TEXT_RPG
         }
         public override void Input()
         {
-            Console.ReadKey();
+            Console.ReadKey(true);
         }
         public override void Update()
         {
@@ -27,7 +26,7 @@ namespace TEXT_RPG
         }
         public override void Result()
         {
-
+            Game.ChangeScene("CreateCharacter");
         }
     }
 

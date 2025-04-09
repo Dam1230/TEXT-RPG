@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TEXT_RPG.Scene
 {
-    class Scene01
+    class Village
     {
     }
 }
