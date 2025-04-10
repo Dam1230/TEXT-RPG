@@ -10,11 +10,17 @@ namespace TEXT_RPG
     {
         public override void Render()
         {
-            Console.WriteLine("--------------------");
-            Console.WriteLine("--------------------");
-            Console.WriteLine("      TEXT RPG      ");
-            Console.WriteLine("--------------------");
-            Console.WriteLine("--------------------");
+
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("+--------------------------------------+");
+            Console.WriteLine("|                                      |");
+            Console.WriteLine("|            TEXT RPG GAME             |");
+            Console.WriteLine("|                                      |");
+            Console.WriteLine("|                                      |");
+            Console.WriteLine("+--------------------------------------+");
+            Console.ResetColor();
+
+            Console.WriteLine("게임을 시작하려면 아무 키나 누르세요...");
         }
         public override void Input()
         {

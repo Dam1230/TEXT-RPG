@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TEXT_RPG.Scene
+namespace TEXT_RPG
 {
-    class Village
+    public static class PlayerManager
     {
+        public static Player Player { get; set; }
     }
 }

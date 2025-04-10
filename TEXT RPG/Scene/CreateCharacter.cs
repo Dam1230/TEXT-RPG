@@ -63,8 +63,9 @@
         {
             if (currentStep == CreateStep.Done)
             {
+                PlayerManager.Player = new Player(nameInput, selectedJob);
                 // 캐릭터 생성 완료 후 다음 씬으로 이동
-                Game.ChangeScene("Scene01");
+                Game.ChangeScene("Village");
             }
 
         }

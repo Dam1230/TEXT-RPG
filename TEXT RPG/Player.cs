@@ -32,9 +32,32 @@ namespace TEXT_RPG
             }
         }
 
-        public List<string> Inventory = new List<string>();
+        public int Gold { get; set; } = 100; // 플레이어의 골드
 
-        
+
+        public List<Item> Inventory { get; private set; } = new List<Item>();
+        public void AddItem(Item item)
+        {
+            Inventory.Add(item);
+            Console.WriteLine($"{item.Name}을(를) 인벤토리에 추가했습니다.");
+        }
+
+        public void UseItem(int index)
+        {
+            if (index < 0 || index >= Inventory.Count)
+            {
+                Console.WriteLine("인벤토리에 해당 아이템이 없습니다.");
+                return;
+            }
+
+            var item = Inventory[index];
+            item.Use(this);
+            Inventory.RemoveAt(index);
+
+        }
+
+
+
 
         public Player(string name, Job job) 
         {

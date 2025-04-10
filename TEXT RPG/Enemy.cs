@@ -21,6 +21,7 @@ namespace TEXT_RPG
             Attack = atk;
         }
 
+
         public void TakeDamage(int amount)
         {
             CurrentHP -= amount;
